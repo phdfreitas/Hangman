@@ -1,0 +1,65 @@
+Ajax
+Alaves
+America MG
+America PE
+America RN
+Atletico de Madrid
+Athletico PR
+Atletico MG
+Boa Esporte
+Boavista
+Boca Juniors
+Barcelona
+Bayern de Munique
+Borussia Dortmund
+Chapecoense
+Deportivo La Coruna
+Desportiva Ferroviaria
+Duque de Caxias
+Espanyol
+Everton
+Ferroviaria
+Ferroviario
+Figueirense
+Fiorentina
+Flamengo
+Flamengo de Arcoverde
+Fluminense
+Formosa
+Fortaleza
+Genoa
+Getafe
+Girona
+Goias
+Guarani
+Internacional
+Internazionale
+Juazeirense
+Juventude
+Juventus
+Lazio
+Leganes
+Leicester
+Levante
+Linense
+Linhares
+Liverpool
+Lyon
+Manchester City
+Manchester United
+Mirassol
+Napoli
+Nautico
+Oeste
+Operario
+Palermo
+Palmas
+Palmeiras
+Parana
+Porto
+Real Madrid
+Sport
+Sporting
+Santa Cruz
+Treze
+Valladolid
