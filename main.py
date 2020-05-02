@@ -103,7 +103,7 @@ class Hangman:
 			return True	
 			
 	# Método para verificar se o jogador venceu
-	def hangman_won(self):
+	def hangman_win(self):
 		if self.total == len(self.word):
 			return True
 	
@@ -111,6 +111,7 @@ class Hangman:
 	def print_game_status(self):
 		print(board[self.count])
 
+		print(f'The word is: {self.word}\n')
 		print('Palavra: ', end = '')
 		for w in range(0,len(self.word)):
 			if(self.word[w] == ' '):
@@ -132,25 +133,25 @@ class Hangman:
 def rand_word(sorteado):
 
 	if(sorteado == 0):
-		with open("arquivos/bandas.txt", "rt") as f:
-			bank = f.readlines()
-		return bank[random.randint(0,len(bank))].upper().strip()
+		with open("arquivos/bandas.txt", "rt") as file:
+			bank = file.readlines() # retorna uma lista de todas as palavras do arquivo
+		return bank[random.randint(0,(len(bank) - 1))].upper().strip()
 	elif sorteado == 1:
 		with open("arquivos/comidas.txt", "rt") as f:
 			bank = f.readlines()
-		return bank[random.randint(0,len(bank))].upper().strip()
+		return bank[random.randint(0,(len(bank) - 1))].upper().strip()
 	elif sorteado == 2:
 		with open("arquivos/cores.txt", "rt") as f:
 			bank = f.readlines()
-		return bank[random.randint(0,len(bank))].upper().strip()
+		return bank[random.randint(0,(len(bank) - 1))].upper().strip()
 	elif sorteado == 3:
 		with open("arquivos/livros.txt", "rt") as f:
 			bank = f.readlines()
-		return bank[random.randint(0,len(bank))].upper().strip()
+		return bank[random.randint(0,(len(bank) - 1))].upper().strip()
 	else:
 		with open("arquivos/times.txt", "rt") as f:
 			bank = f.readlines()
-		return bank[random.randint(0,len(bank))].upper().strip()
+		return bank[random.randint(0,(len(bank) - 1))].upper().strip()
 
 # Função Main - Execução do Programa
 def main():
@@ -174,13 +175,13 @@ def main():
 			
 			if(game.hangman_over()):
 				break
-			if(game.hangman_won()):
+			if(game.hangman_win()):
 				break
 
 			game.guess(str(input('\nDigite uma letra: ')).upper())
 			
 		# De acordo com o status, imprime mensagem na tela para o usuário
-		if (game.hangman_won()):
+		if (game.hangman_win()):
 			print ('\n\033[1;93mParabéns! Você venceu!!\033[1;37m')
 
 			resposta = str(input('\033[1;36mDeseja jogar novamente? [S/N] \033[1;37m')).upper()
