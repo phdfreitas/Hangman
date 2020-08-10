@@ -5,4 +5,4 @@
 ### Projeto proposto no Curso *Python Fundamentos para Análise de Dados*
 ### Link do curso: [Data Science Academy](https://www.datascienceacademy.com.br/course?courseid=python-fundamentos)
 
-#### Teste o jogo: [Hangman Game](https://repl.it/@phdfreitas/hangman)
+#### Teste o jogo: [Hangman Game](https://hangman.phdfreitas.repl.run/)
